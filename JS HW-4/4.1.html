@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var operand1=+prompt("Введите первое число:");
+        var sign=prompt("Введите знак арифметической операции:+-*/");
+        var operand2=+prompt("Введите второе число:");
+        function add(){
+            document.write(operand1+operand2);
+        }
+        function sub(){
+            document.write(operand1-operand2);
+        }
+        function mul(){
+            document.write(operand1*operand2);
+        }
+        function div(){
+        if (operand2==0);{
+        alert("Ошибка")
+        }
+        document.write(operand1/operand2);
+    }
+    switch(sign){
+        case"+":{
+            add();
+            break;
+        }
+        case"-":{
+            sub();
+            break;
+        }
+        case"*":{
+            mul();
+            break;
+        }
+        case"/":{
+            div();
+            break;
+        }
+        default:{
+       alert("Не является знаком арифметической операции.")
+    }
+
+}
+    </script>
+
+
+    
+</body>
+</html>
